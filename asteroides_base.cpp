@@ -13,12 +13,15 @@ GRADO Y GRUPO: ISC-2A
 #include <graphics.h> //para el uso de graficos
 
 //PROTOTIPOS DE LAS FUNCIONES
+void menu();
+void mostrarAyuda();
+
 
 //FUNCIONES SIN PARAMETROS Y SIN RETORNO
 
 
 //FUNCIONES CON PARAMETROS Y SIN RETORNO
-
+void mostrarPuntaje();
 
 //FUNCIONES SIN PARAMETROS Y CON RETORNO
 
@@ -27,7 +30,23 @@ GRADO Y GRUPO: ISC-2A
 using namespace std;
 
 int main(){
-	
+    int opc;
+    do{		//Bucle principal del programa
+
+	cout<<"\t=== !ASTEROID! ===\n";
+        cout<<"Jugar..................1\n";	
+        cout<<"Puntuacion.............2\n";
+        cout<<"Salir..................3\n";
+        cout<<"Seleccione una opcion: ";
+        fflush(stdin);
+        cin>>opc;
+	switch(opc){
+            case 1: ""; break;
+            case 2: ""; break;
+            default: printf("Opcion no valida. Intente nuevamente.\n"); break;
+        }
+    }while(opc!='3');
+    
 	return 0;
 }
 
