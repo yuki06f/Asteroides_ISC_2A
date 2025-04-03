@@ -19,13 +19,13 @@ void mostrarAyuda();
 
 //FUNCIONES SIN PARAMETROS Y SIN RETORNO
 
-
 //FUNCIONES CON PARAMETROS Y SIN RETORNO
 void mostrarPuntaje();
-
 //FUNCIONES SIN PARAMETROS Y CON RETORNO
 
-
+//FUNCIONES CON PARAMETRO Y RETORNO
+int disparar(Disparo* disparo, Nave* nave);
+int colision(Disparo* disparo, Asteroide* asteroide);
 
 using namespace std;
 
@@ -49,5 +49,11 @@ int main(){
     
 	return 0;
 }
-
 //IMPLEMENTACION DE LAS FUNCIONES
+int disparar(Disparo* disparo, Nave* nave){
+	
+}
+
+int colision(Disparo* disparo, Asteroide* asteroide){
+	
+}
